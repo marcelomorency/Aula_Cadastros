@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Compartilhe informações do produto:</h1>
+    <p style="color:red;">Os itens com asterisco(*) são obrigatórios</p>
+      <form action="# " method="get">
+    <label for="ftitulo_produto">Titulo do produto*:</label>
+    <br>
+    
+    <input type="text" value="" placeholder="Informe o titulo do produto" minlength="10" maxlength="60" size="60" required><br>
+    <br>
+    <label for="nome_produto">Descrição:</label><br>
+    <textarea name="descricao" rows"5" cols="57"></textarea>
+    <br>
+   
+    
+    <br> <br>    
+    <!-- dropdown | select option-->
+     <h4 >Selecione a marca do produto<span style="color:red;"> *</span>:</h4>   
+    <select name="marca_produto">
+        <option value="#">Selecione a marca</option>
+        <option value="adidas">Adidas</option>
+        <option value="Nike">Nike</option>
+        <option value="beco_poeira"> Beco da poeira</option>
+    </select>
+    <br><br>
+    <h4>Selecione o tamanho do produto:</h4>
+    <input type="radio" name="tamanho_produto" value="38">
+    <label for="ftamanho">38</label>
+    <input type="radio" name="tamanho_produto" value="40">
+    <label for="ftamanho">40</label>
+    <input type="radio" name="tamanho_produto" value="42">
+    <label for="ftamanho">42</label>
+    <br>
+    <h4>Como desejar transacionar o produto:</h4>
+    <input type="checkbox" name="tipo_transacao" value="apenas_dinheiro">
+    <label for="fapenas_dinheiro">Apenas dinheiro</label>
+    <input type="checkbox" name="tipo_transacao" value="troca">
+    <label for="ftroca">Aceito Trocas</label>
+    <input type="checkbox" name="tipo_transacao" value="doação">
+    <label for="fdoação">Posso Doar</label>
+    <input type="checkbox" name="tipo_transacao" value="PIX">
+    <label for=fpix">Pix</label>
+    <br><br>
+    <h4>Cadastro de usuário:</h4>
+
+    <fieldset style="width: 30%;">
+        <legend>Ainda não é cadastrado? Cadastre-se agora</legend>
+        <labeL for="femail_cliente">Informe seu Email*:</labeL><br>
+        <input type="email" name="email-cliente" required><br>
+        <label for="fsenha-cliente">Crie uma senha*:</label><br>   
+        <input type="password" name="senha-cliente" required><br>
+    </fieldset>
+  
+    
+    <input type="reset" value="Limpar" style="background-color: yellow;">
+    <input type="submit" value="Enviar" style="background-color: green; color: white; margin-top: 10px;">
+    
+</form>
+</body>
+</html>
